@@ -1,0 +1,78 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, #af14, #fa58);
+}
+.wrapper {
+  width: 40%;
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  border-radius: 12px;
+}
+.icon i {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+  border-radius: 50%;
+  color: white;
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 1.8rem;
+  color: #777;
+}
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 6px;
+}
+form input {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+form input::-webkit-inner-spin-button,
+form input::-webkit-outer-spin-button {
+  display: none;
+}
+.btn_verify {
+  padding: 6px 8px;
+  border-radius: 6px;
+  width: 100%;
+  background-color: blueviolet;
+  color: white;
+  font-weight: 700;
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+  transition: 0.3s;
+}
+.btn_verify.active {
+  opacity: 1;
+  cursor: pointer;
+  pointer-events: auto;
+}
